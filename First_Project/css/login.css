@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body Stylings */
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/*Main Container */
+
+.maincontainer{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    padding: 30px;  
+}
+
+/*Left Container */
+.leftcontainer{
+    width: 100%;
+    height: 100%;
+    background-color: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Right Container */
+
+.rightcontainer{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+}
+/*Right Container Image */
+.rightcontainer img{
+    height: 100%;
+    
+}
+/*login form styling */
+.loginform{
+    width: 40%;
+    height:100%;
+    overflow-y: auto;
+
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.loginform::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .loginform {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+.msgsection{
+    width: 100%;
+    margin-bottom: 40px;
+}
+/*message title */
+.msgsection .title{
+    font-size: 38px;
+    font-weight: bold;
+    padding-bottom: 17px;
+}
+
+/*message description */
+.msgsection .desc{
+    font-size: 16px;
+    line-height: 28px;
+}
+/*Form*/
+.form{
+    width: 100%;
+}
+/*single input*/
+
+.singleinput{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.singleinput .myinput{
+    width: 100%;
+    height: 50px;
+    border-radius:10px;
+    padding: 15px;
+    font-size: 13px;
+    border: 0.5px solid #d4d7e3;
+    background-color: #f7fbff;
+
+}
+/*input label styling */
+.singleinput label{
+    font-weight: bold;
+}
+
+/*forgot Passowrd styling */
+.forgotpassword {
+    width: 100%;
+    padding: 10px 0;
+}
+.forgotpassword .forgot{
+    text-decoration: none;
+    font-size: 16px;
+    float: right;
+    padding-bottom: 35px;
+    color:#1e4ae9;
+    font-weight: 600;
+}
+/*submit button */
+.singleinput .mybtn{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #162d3a;
+    color: #ffffff;
+    border: none;
+}
+/*Social Signin*/
+.socialsignin{
+    width: 100%;
+    margin-top:30px;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/*or section styling*/
+.orsection .ortext{
+    width: 100%;
+    text-align: center;
+    font-size: 23px;
+    position: relative;
+}
+.ortext::before{
+    content: "";
+    width: 45%;
+    height: 0.5%;
+    background-color: #cfdfe2;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+.ortext::after{
+    content: "";
+    width: 45%;
+    height: 0.5%;
+    background-color: #cfdfe2;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+/* Google Facebook Button Stylings */
+.googlefacebook{
+    width: 100%;
+    display:flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.googlefacebook .gfbtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 12px;
+    background-color: #f3f9fa;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+    align-items: center;
+}
+.registernow{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 15px;
+}
+.register{
+    text-decoration: none;
+}
+gfbtn{
+    padding: 0 20px;
+    width: auto;
+}
+.gfbtn p{
+    width: 40%;
+}

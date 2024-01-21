@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phoneBody {
+  height: 842px;
+  width: 380px;
+  border: 10px black solid;
+  border-radius: 10px;
+  background-image: url(../image/gradient-background-4480x2520-9837\ 1.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header {
+  display: flex;
+  padding: 5px;
+  justify-content: space-around;
+}
+header .time {
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+header .camera {
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  background-color: black;
+}
+.batNet {
+  display: flex;
+  gap: 15px;
+}
+header .battery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.battery span {
+  width: 38px;
+  height: 28px;
+  background: #d9d9d9;
+  border-radius: 7px;
+}
+header .network {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.inputBox {
+  width: 321px;
+  height: 80px;
+  border-radius: 16px;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#displayPass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+.buttons {
+  padding: 0 65px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.buttons button {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: #d9d9d9;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: larger;
+  font-weight: 600;
+}
+
+button:hover {
+  color: black;
+  background-color: #fff;
+}

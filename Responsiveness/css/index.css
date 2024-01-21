@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007549;
+}
+.mainContainer {
+  display: flex;
+  align-items: center;
+  background-color: pink;
+  border: none;
+  border-radius: 20px;
+}
+.mainContainerLeft {
+  background-color: #fff;
+  width: 40%;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+  padding: 50px 68px;
+}
+
+.mainContainerLeft h2 {
+  display: flex;
+  justify-content: center;
+  color: #355b3e;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+  margin-bottom: 64px;
+}
+.mainContainerLeft .description {
+  color: #355b3e;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 64px;
+}
+
+.mainContainerLeft .welcome {
+  color: #58745e;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  margin-bottom: 32px;
+}
+mainContainerLeft .myInput {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 24px;
+}
+.myInput {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.myInput .label {
+  color: #2f3d4c;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+.myInput input {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #b8dcbf;
+  background: #fff;
+  height: 40px;
+  padding-left: 20px;
+}
+
+#email::placeholder {
+  color: #355b3e;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.passwordCont {
+  position: relative;
+}
+
+.passwordCont span {
+  position: absolute;
+  right: 20px;
+  top: 24px;
+}
+
+.mainContainerRight {
+  width: auto;
+  height: 100%;
+}
+
+.logo {
+  display: none;
+}
+
+/*************************************************************************************************************************
+***************************************************************************
+******************RESPONSIVENESS *****************************************************************************************
+**********************************************************************************************************************/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+  }
+  .mainContainer {
+    height: 100%;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .logo {
+    display: block;
+    padding-top: 20px;
+  }
+  .mainContainerLeft,
+  .mainContainerLeft {
+    width: 100%;
+  }
+  .mainContainerRight {
+    padding: 50px;
+    background-color: red;
+  }
+  .maincontainerRight img {
+    width: auto;
+    height: 200px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

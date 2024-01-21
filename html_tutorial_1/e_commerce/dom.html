@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <p id="message">JavaScript DOM</p>
+      <input type="radio" name="language" value="JS" />
+      <input type="radio" name="language" value="Python" />
+      <h1>Lorem, ipsum.</h1>
+      <h1>Neque, doloremque?</h1>
+      <h1>Ut, facere.</h1>
+      <h1>Expedita, iusto.</h1>
+
+      <h2 class="myHeading">Lorem, ipsum.</h2>
+      <h2 class="myHeading">Ex, alias.</h2>
+
+      <div id="container">
+        <h2 class="myHeading">Pariatur, soluta!</h2>
+        <h2 class="myHeading">Ullam, libero!</h2>
+      </div>
+
+      <p class="myDesc">Lorem ipsum dolor sit amet.</p>
+      <p id="myTitle">Lorem, ipsum dolor.</p>
+      <div class="title">
+        <p>Welcome to GreatStack 1</p>
+        <p>Welcome to GreatStack 2</p>
+        <p>Welcome to GreatStack 3</p>
+        <p>Welcome to GreatStack 4</p>
+      </div>
+    </div>
+    <script>
+      let cont = document.getElementById("container");
+      let msg = cont.getElementsByClassName("message");
+      let btn = document.getElementsByName("language");
+      let headings = document.getElementsByTagName("h1");
+      let cls = document.getElementsByClassName("myHeading");
+      let parent = document.querySelector(".title");
+      let newDiv = document.createElement("div");
+      newDiv.innerHTML = "<p>Welcome to My World.</p>";
+
+      document.body.prepend(newDiv);
+      document.title = "Olori Ebi";
+      console.log(newDiv);
+    </script>
+  </body>
+</html>
